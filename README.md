@@ -57,4 +57,7 @@ This lab simulates a real-world threat hunting scenario using Microsoft Defender
 
 ## 📸 Screenshots
 
-![failed_logins](visuals/failed_login_chart.png)
+## Failed Logins
+![failed_logins](visuals/line-chart-failed-logins.png)
+## Remote Ips with Failed Logins
+![remote Ip with failed logins](visuals/top-remote-ips-with-failed-logins.png)
