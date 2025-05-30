@@ -1,0 +1,6 @@
+DeviceLogonEvents
+| where DeviceName == "windows-target-1"
+| where ActionType == "LogonFailed"
+| summarize FailedAttempts = count(), FirstSeen=min(Timestamp), LastSeen=max(Timestamp)
+    by RemoteIP, AccountName
+| where FailedAttempts > 10
