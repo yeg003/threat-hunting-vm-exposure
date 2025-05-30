@@ -1,0 +1,5 @@
+- **T1110**: Brute Force
+  - Repeated login failures followed by a success
+  - External IP address from unknown location
+- **T1078**: Valid Accounts
+  - Use of compromised credentials to access the system
