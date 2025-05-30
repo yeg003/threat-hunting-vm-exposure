@@ -1,0 +1,4 @@
+DeviceLogonEvents
+| where DeviceName == "windows-target-1"
+| where RemoteIPType == "Public"
+| project Timestamp, RemoteIP, ActionType, AccountName
