@@ -1,0 +1,5 @@
+DeviceLogonEvents
+| where DeviceName == "windows-target-1"
+| summarize Failed = countif(ActionType == "LogonFailed"), Success = countif(ActionType == "LogonSuccess")
+    by AccountName, RemoteIP, bin(Timestamp, 1h)
+| where Failed > 10 and Success > 0
